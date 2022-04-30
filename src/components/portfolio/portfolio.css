@@ -1,0 +1,107 @@
+
+.portfolio__item__container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+.portfolio__item{
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portfolio__item:hover{
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.portfolio__item-image{
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio__item h5{
+    margin: 1.2 0 2rem;
+    padding-left: 0.5rem;
+}
+
+.portfolio__item-cga{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+.portfolio__item-cga a{
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.3);
+}
+.portfolio__item-cga a:hover{
+    background: rgba(0, 0,0, 0.6);
+}
+.portfolio__item-demo{
+    padding: 0.5rem;
+}
+
+.categories__buttons{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 0.2rem;
+    justify-content: center;
+    
+}
+.categories__buttons .button{
+    margin:0 0 1.3rem 0;
+    text-align: center;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.categories__buttons .button:hover{
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+  }
+
+.portfolio__container .see__more{
+    width: 4rem;
+    padding: 4rem;
+}
+  
+
+/*============FOR MIDIUM DEVICES==============*/
+
+@media screen and (max-width:1024px) {
+    .portfolio__item__container{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+    .categories__buttons{
+        grid-template-columns: repeat(4,1fr);
+    }
+  }
+  
+  
+  /*============FOR SMALL DEVICES==============*/
+  
+  @media screen and (max-width:600px) {
+      .portfolio__item__container{
+          grid-template-columns: 1fr;
+          gap: 1rem;
+      }
+      .categories__buttons{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

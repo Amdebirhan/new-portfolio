@@ -1,0 +1,8 @@
+.portfolio__header{
+    background: var(--color-primary);
+    padding: 7rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+
+}
